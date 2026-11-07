@@ -357,9 +357,9 @@ with tab1:
         use_container_width=True
     )
 
-    ----
+    
     # LOAD SELECTED MODEL
-    ----
+    
 
     try:
 
@@ -383,9 +383,9 @@ with tab1:
 
     st.info(selected_model)
 
-    ----
+    
     # EVALUATION METRICS
-    ----
+    
 
     st.header("3. Evaluation Metrics")
 
@@ -413,9 +413,9 @@ with tab1:
                 else "N/A"
             )
 
-    ----
+    
     # CONFUSION MATRIX
-    ----
+    
 
     st.header("4. Confusion Matrix")
 
@@ -474,9 +474,9 @@ with tab1:
 
     plt.close(fig)
 
-    ----
+    
     # CLASSIFICATION REPORT
-    ----
+    
 
     st.header("5. Classification Report")
 
@@ -499,9 +499,9 @@ with tab1:
         use_container_width=True
     )
 
-    ----
+    
     # ROC CURVE
-    ----
+    
 
     st.header("6. ROC Curve")
 
@@ -556,9 +556,9 @@ with tab1:
             "ROC/AUC requires both diagnosis classes."
         )
 
-    ----
+    
     # PREDICTION RESULTS
-    ----
+    
 
     st.header("7. Prediction Results")
 
@@ -602,9 +602,9 @@ with tab2:
         f"from {data_source}."
     )
 
-    ----
+    
     # EVALUATE ALL FIVE SAVED MODELS
-    ----
+    
 
     results = []
 
@@ -634,9 +634,9 @@ with tab2:
                 f"{model_name}: {error}"
             )
 
-    ----
+    
     # DISPLAY COMPARISON TABLE
-    ----
+    
 
     if results:
 
